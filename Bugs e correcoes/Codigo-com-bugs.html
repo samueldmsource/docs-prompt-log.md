@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Código com Bugs</title>
+   <style>
+        .container { border: 1px solid black; padding: 10px; }
+        .item-inline {
+            background-color: lightcoral;
+            /* Bug 1: width não se aplica a elementos inline */
+            width: 150px; 
+            /* Bug 2: margin-top não se aplica a elementos inline */
+            margin-top: 30px; 
+            padding: 10px;
+        }
+        /* Bug 3: Seletor incorreto, deveria ser '.item-block' */
+        #item-block {
+            background-color: lightblue;
+            padding: 15px;
+            margin: 10px;
+        }
+        .container {
+             /* Bug 4: Fazendo um container de bloco se comportar como inline sem querer */
+            display: inline;
+        }
+    </style>
+</head>
+
+<body>
+  <h1>Página para Depuração</h1>
+    <div class="container">
+        <span class="item-inline">Este SPAN não deveria ter 150px de largura.</span>
+        <div class="item-block">Este DIV deveria ter um fundo azul.</div>
+    </div>
+</body>
+
+</html>

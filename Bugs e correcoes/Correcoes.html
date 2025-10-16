@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Código Corrigido</title>
+  <style>
+        .container { 
+            border: 1px solid black; 
+            padding: 10px;
+            /* Correção 4: Removido o 'display: inline' para que o container se comporte como um bloco. */
+        }
+        .item-inline {
+            background-color: lightcoral;
+            padding: 10px;
+            /* Correção 1 e 2: Para aplicar width e margin-top, o display foi mudado para inline-block. */
+            display: inline-block;
+            width: 150px; 
+            margin-top: 30px; 
+        }
+        /* Correção 3: Seletor ajustado de '#item-block' para '.item-block' para corresponder à classe no HTML. */
+        .item-block {
+            background-color: lightblue;
+            padding: 15px;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+  <h1>Página Corrigida</h1>
+    <div class="container">
+        <span class="item-inline">Agora este SPAN tem 150px de largura.</span>
+        <div class="item-block">Agora este DIV tem o fundo azul correto.</div>
+    </div>
+</body>
+
+</html>
