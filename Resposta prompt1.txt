@@ -1,0 +1,4 @@
+Elementos block-level ocupam toda a largura disponível e iniciam em uma nova linha (ex.: <div>, <p>).
+Elementos inline-level ocupam apenas o espaço do seu conteúdo e permanecem na mesma linha (ex.: <span>, <a>).
+Use <div> para agrupar blocos estruturais da página (como seções, cartões, contêineres).
+Use <span> para estilizar ou destacar partes pequenas dentro de um texto ou linha.
