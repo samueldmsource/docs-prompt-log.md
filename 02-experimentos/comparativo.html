@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Comparativo Lado a Lado</title>
+  <style>
+        .comparativo-container { display: flex; justify-content: space-around; gap: 20px; }
+        .coluna { flex: 1; border: 2px solid #9a8c98; padding: 15px; background: #f4f1de; }
+        .bloco { background: #e07a5f; color: white; padding: 10px; margin-bottom: 10px; border: 1px solid #3d405b; }
+        .linha { background: #81b29a; color: white; padding: 5px; margin-right: 5px; border: 1px solid #3d405b; }
+    </style>
+</head>
+
+<body>
+   <h1>Prompt 6: Comparativo Lado a Lado</h1>
+    <div class="comparativo-container">
+        <div class="coluna">
+            <h3>Esquerda: 3 DIVs (Block)</h3>
+            <p>DIVs são elementos de bloco e, por padrão, empilham-se verticalmente, cada um começando em uma nova linha.</p>
+            <div class="bloco">DIV 1</div>
+            <div class="bloco">DIV 2</div>
+            <div class="bloco">DIV 3</div>
+        </div>
+        <div class="coluna">
+            <h3>Direita: 4 SPANs (Inline)</h3>
+            <p>SPANs são elementos de linha e fluem juntos no mesmo eixo horizontal, respeitando o fluxo do texto.</p>
+            <span class="linha">SPAN 1</span>
+            <span class="linha">SPAN 2</span>
+            <span class="linha">SPAN 3</span>
+            <span class="linha">SPAN 4</span>
+        </div>
+    </div>
+</body>
+
+</html>

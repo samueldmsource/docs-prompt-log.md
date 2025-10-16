@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Experimento: Inline-Block</title>
+  <style>
+        .container-exp { border: 2px dashed #4a4e69; padding: 10px; margin-top: 20px; }
+        .item-span {
+             /* * Prompt 5: Usar display:inline-block.
+              * Combina o melhor dos dois mundos: permanece na mesma linha (inline)
+              * mas aceita dimensões e margens verticais (block).
+             */
+            display: inline-block;
+            width: 150px;
+            height: 80px;
+            margin: 10px;
+            padding: 10px;
+            background-color: #4a4e69;
+            color: white;
+            border: 1px solid #22223b;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+  <h1>Usando `display: inline-block`</h1>
+    <div class="container-exp">
+        <span class="item-span">Elemento 1</span>
+        <span class="item-span">Elemento 2</span>
+        <span class="item-span">Elemento 3</span>
+    </div>
+    <p><strong>Efeito:</strong> Os elementos permanecem lado a lado, mas agora respeitam as propriedades `width`, `height`, `margin` e `padding` verticais, o que não seria possível com `display: inline`.</p>
+</body>
+
+</html>
