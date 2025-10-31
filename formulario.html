@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.css">
+
+    <style>
+  body {
+    background-color: #cefad0; /* Cor de fundo da página */
+  } </style>
+
+
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-#ffff81;" style="background-color: #ffff81;">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Menu</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Acervo da República</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Notícias
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Documentos</a></li>
+            <li><a class="dropdown-item" href="#">Galeria</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Curiosidades</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" aria-disabled="true"></a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+
+    <div class="mb-3">
+  <label for="exampleFormControlInput1" class="form-label">Email</label>
+  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+</div>
+<div class="mb-3">
+  <label for="exampleFormControlTextarea1" class="form-label">Digite sua dúvida, sugestão ou informação adicional, e ajude a manter nosso site atualizado.</label>
+  <textarea class="form-control" id="exampleFormControlTextarea1" rows="10" cols="10"></textarea>
+  <input class="btn btn-primary" type="submit" value="ENVIAR">
+</div>
+
+<div class="container mt-5">
+    <div class="d-flex justify-content-center align-items-center">
+        <a href="https://www.facebook.com" target="_blank" class="btn btn-primary btn-lg rounded-circle m-2" aria-label="Facebook">
+            <i class="bi bi-facebook"></i>
+        </a>
+        <a href="https://www.twitter.com" target="_blank" class="btn btn-info btn-lg rounded-circle m-2" aria-label="Twitter">
+            <i class="bi bi-twitter"></i>
+        </a>
+        <a href="https://www.instagram.com" target="_blank" class="btn btn-danger btn-lg rounded-circle m-2" aria-label="Instagram">
+            <i class="bi bi-instagram"></i>
+        </a>
+    </div>
+</div>
+    
+</body>
+</html>
